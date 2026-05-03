@@ -2,7 +2,7 @@ import axios from "axios";
 import type { InternalAxiosRequestConfig } from "axios";
 import type { AuthResponse } from "../models/response/AuthResponse";
 
-export const API_URL = 'http://localhost:5000/api'
+export const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 type RetryRequestConfig = InternalAxiosRequestConfig & {
   _isRetry?: boolean;
