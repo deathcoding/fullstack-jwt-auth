@@ -1,0 +1,136 @@
+.page {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(160deg, #f6f8ff 0%, #edf2ff 100%);
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border: 1px solid #e5e9f5;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(49, 65, 102, 0.12);
+  padding: 28px;
+}
+
+.modeSwitch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 22px;
+  background: #f1f4fb;
+  border-radius: 12px;
+  padding: 6px;
+}
+
+.modeButton {
+  border: 0;
+  background: transparent;
+  color: #536084;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modeButtonActive {
+  background: #ffffff;
+  color: #1f2a4a;
+  box-shadow: 0 3px 8px rgba(49, 65, 102, 0.14);
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #1c2745;
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  color: #60709b;
+  font-size: 14px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fieldLabel {
+  color: #273252;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #cad4ef;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #1c2745;
+  background: #fdfdff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus {
+  border-color: #6780ff;
+  box-shadow: 0 0 0 3px rgba(103, 128, 255, 0.2);
+}
+
+.passwordRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.button {
+  border: 0;
+  border-radius: 10px;
+  background: #3f5df6;
+  color: #ffffff;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover:not(:disabled) {
+  background: #3552e6;
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.secondaryButton {
+  background: #e8edff;
+  color: #2f458f;
+}
+
+.secondaryButton:hover:not(:disabled) {
+  background: #dbe4ff;
+}
+
+.errorMessage {
+  margin: 2px 0;
+  color: #be2a3d;
+  font-size: 13px;
+  min-height: 18px;
+}
